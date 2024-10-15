@@ -25,7 +25,10 @@ export default function Todo({ todo, onUpdate, onDelete }) {
         {text}
       </label>
       <span className={styles.icon}>
-        <button onClick={handleDelete}>
+        <button
+          onClick={handleDelete}
+          className={styles.button}
+        >
           <FaTrashAlt />
         </button>
       </span>
